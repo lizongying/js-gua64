@@ -10,6 +10,8 @@ npm i js-gua64
 
 ## example
 
+需要在package.json文件中设置"type": "module"
+
 ```
 import {decode, encode} from 'js-gua64';
 
