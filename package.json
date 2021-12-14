@@ -1,0 +1,24 @@
+{
+  "name": "js-gua64",
+  "version": "0.0.1",
+  "description": "六十四卦代替base64",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizongying/js-gua64.git"
+  },
+  "keywords": [
+    "base64",
+    "六十四卦"
+  ],
+  "author": "Li ZongYing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lizongying/js-gua64/issues"
+  },
+  "homepage": "https://github.com/lizongying/js-gua64#readme"
+}
