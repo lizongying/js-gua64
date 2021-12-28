@@ -1,6 +1,6 @@
 {
   "name": "js-gua64",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "六十四卦代替base64",
   "main": "index.js",
   "type": "module",
