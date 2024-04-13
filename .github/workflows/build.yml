@@ -60,9 +60,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Login to npm
-        run: npm login --registry=https://registry.npmjs.org/ --always-auth
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
 
       - name: Publish to npm
         run: npm publish --access public
