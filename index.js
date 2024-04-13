@@ -23,14 +23,14 @@ const encode = (str) => {
             encoded.push(gua[bytes[i] >> 2]);
             encoded.push(gua[(bytes[i] & 0x3) << 4 | (bytes[i + 1] >> 4)]);
             encoded.push(gua[(bytes[i + 1] & 0xf) << 2]);
-            encoded.push('☯');
+            encoded.push('〇');
             continue;
         }
         if (i + 3 === len + 2) {
             encoded.push(gua[bytes[i] >> 2]);
             encoded.push(gua[(bytes[i] & 0x3) << 4]);
-            encoded.push('☯');
-            encoded.push('☯');
+            encoded.push('〇');
+            encoded.push('〇');
         }
     }
     return encoded.join('');
@@ -44,15 +44,15 @@ const decode = (str) => {
     }
     const b = [];
     for (let i = 0; i < str.length; i++) {
-        b.push(gua64dict[str[i]] ? gua64dict[str[i]] : 0);
+        b.push(gua64dict[str[i]] ? gua64dict[str[i]] : 255);
     }
     const encoded = [];
     for (let i = 0; i < b.length; i = i + 4) {
         encoded.push((b[i] & 0x3f) << 2 | (b[i + 1] >> 4 & 0x3));
-        if (((b[i + 1] & 0xf) << 4 | (b[i + 2] >> 2 & 0xf)) !== 0) {
+        if (b[i + 2] !== 255) {
             encoded.push((b[i + 1] & 0xf) << 4 | (b[i + 2] >> 2 & 0xf));
         }
-        if (((b[i + 2] & 0x3) << 6 | (b[i + 3] & 0x3f)) !== 0) {
+        if (b[i + 3] !== 255) {
             encoded.push((b[i + 2] & 0x3) << 6 | (b[i + 3] & 0x3f));
         }
     }

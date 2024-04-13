@@ -1,10 +1,11 @@
 {
   "name": "js-gua64",
-  "version": "0.0.3",
-  "description": "六十四卦代替base64",
+  "version": "0.0.4",
+  "description": "六十四卦编码，js实现。\n如：“hello，世界”会编码为“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”。",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,12 +14,15 @@
   },
   "keywords": [
     "base64",
-    "六十四卦"
+    "六十四卦编码"
   ],
   "author": "Li ZongYing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lizongying/js-gua64/issues"
   },
-  "homepage": "https://github.com/lizongying/js-gua64#readme"
+  "homepage": "https://github.com/lizongying/js-gua64#readme",
+  "devDependencies": {
+    "terser": "^5.30.3"
+  }
 }
