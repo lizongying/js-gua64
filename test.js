@@ -12,3 +12,9 @@ console.log(r);
 
 r = verify('hello，世界');
 console.log(r);
+
+r = encode('8087:7000');
+console.log(r);
+
+r = decode('䷞䷓䷁䷊䷷䷼䷣䷉䷽䷓䷁䷒');
+console.log(r);

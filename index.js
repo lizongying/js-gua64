@@ -44,7 +44,7 @@ const decode = (str) => {
     }
     const b = [];
     for (let i = 0; i < str.length; i++) {
-        b.push(gua64dict[str[i]] ? gua64dict[str[i]] : 255);
+        b.push(gua64dict[str[i]] !== undefined ? gua64dict[str[i]] : 255);
     }
     const encoded = [];
     for (let i = 0; i < b.length; i = i + 4) {
