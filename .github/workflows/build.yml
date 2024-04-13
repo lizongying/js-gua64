@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Output current working directory
+        run: pwd
+
       - name: Install dependencies
         run: npm install
 
@@ -53,11 +56,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          registry-url: https://registry.npmjs.org/
+      - name: Output current working directory
+        run: pwd
 
       - name: Login to npm
         run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
