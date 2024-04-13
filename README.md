@@ -25,7 +25,7 @@ npm i js-gua64
 import {decode, encode} from 'js-gua64';
 
 
-let r = decode('䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒☯');
+let r = decode('䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇');
 console.log(r);
 
 r = encode('hello，世界');
