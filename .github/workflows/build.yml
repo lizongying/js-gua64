@@ -22,7 +22,7 @@ jobs:
           node-version: '18'
 
       - name: Output current working directory
-        run: pwd
+        run: ls
 
       - name: Install dependencies
         run: npm install
@@ -57,7 +57,7 @@ jobs:
     needs: build
     steps:
       - name: Output current working directory
-        run: pwd
+        run: ls
 
       - name: Login to npm
         run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
