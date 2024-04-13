@@ -1,12 +1,12 @@
 {
   "name": "js-gua64",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "六十四卦编码，js实现。\n如：“hello，世界”会编码为“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”。",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js",
+    "build": "npx terser index.js -o gua64.min.js"
   },
   "repository": {
     "type": "git",

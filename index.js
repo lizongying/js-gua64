@@ -59,4 +59,10 @@ const decode = (str) => {
     return new TextDecoder('utf-8').decode(new Uint8Array(encoded));
 };
 
-export {encode, decode};
+const verify = (str) => {
+    const array = gua.split('');
+    array.push('〇');
+    return [...str].every(char => array.includes(char));
+};
+
+export {encode, decode, verify};
