@@ -30,4 +30,7 @@ console.log(r);
 
 r = encode('hello，世界');
 console.log(r);
+
+r = verify('䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇');
+console.log(r);
 ```
