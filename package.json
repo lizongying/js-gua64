@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "node test.js",
-    "build": "npx terser index.js -o gua64.min.js"
+    "build": "npx terser index.js -o docs/gua64.min.js"
   },
   "repository": {
     "type": "git",

@@ -2,9 +2,11 @@
 
 六十四卦編碼，js實現
 
-如：“hello，世界”會編碼為“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”。
+如：“hello，世界”會編碼為“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”
 
 [npm](https://www.npmjs.com/package/js-gua64)
+
+![](screenshots)
 
 ## 各語言實現
 
