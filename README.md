@@ -24,6 +24,14 @@
 npm i js-gua64
 ```
 
+### browser
+
+```
+<script type="module">
+    import {decode, encode, verify} from 'https://raw.githubusercontent.com/lizongying/js-gua64/refs/heads/main/docs/gua64.min.js';
+</script>
+```
+
 ## 使用方法
 
 [docs](https://github.com/lizongying/js-gua64/docs)
@@ -32,7 +40,6 @@ npm i js-gua64
 
 ```
 import {decode, encode, verify} from 'js-gua64';
-
 
 let r = decode('䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇');
 console.log(r);
