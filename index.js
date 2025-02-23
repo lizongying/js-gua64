@@ -1,3 +1,6 @@
+/*
+https://github.com/lizongying/js-gua64
+*/
 const gua = '䷁䷖䷇䷓䷏䷢䷬䷋' +
     '䷎䷳䷦䷴䷽䷷䷞䷠' +
     '䷆䷃䷜䷺䷧䷿䷮䷅' +

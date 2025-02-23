@@ -1,19 +1,21 @@
 {
   "name": "js-gua64",
-  "version": "0.0.6",
-  "description": "六十四卦编码，js实现。\n如：“hello，世界”会编码为“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”。",
+  "version": "0.0.15",
+  "description": "六十四卦編碼，js實現 \n如：“hello，世界”會編碼為“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "node test.js",
-    "build": "npx terser index.js -o docs/gua64.min.js"
+    "build": "npx terser index.js --comments 'https://github.com/lizongying/js-gua64' -o docs/gua64.min.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lizongying/js-gua64.git"
   },
   "keywords": [
+    "gua64",
     "base64",
+    "六十四卦編碼",
     "六十四卦编码"
   ],
   "author": "Li ZongYing",
