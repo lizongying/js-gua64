@@ -2,9 +2,11 @@
 
 六十四卦編碼，js實現
 
-如：“hello，世界”会编码为“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”。
+如：“hello，世界”會編碼為“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”。
 
-## all language
+[npm](https://www.npmjs.com/package/js-gua64)
+
+## 各語言實現
 
 * [golang](https://github.com/lizongying/go-gua64)
 * [js](https://github.com/lizongying/js-gua64)
@@ -22,7 +24,7 @@ npm i js-gua64
 
 ## 使用方法
 
-[samples](https://github.com/lizongying/js-gua64/samples)
+[docs](https://github.com/lizongying/js-gua64/docs)
 
 需要在package.json文件中設置"type": "module"
 
