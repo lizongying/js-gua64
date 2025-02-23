@@ -6,7 +6,7 @@
 
 [npm](https://www.npmjs.com/package/js-gua64)
 
-![](screenshots)
+![](screenshots/img.png)
 
 ## 各語言實現
 
