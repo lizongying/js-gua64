@@ -1,6 +1,7 @@
-# 六十四卦编码
+# 六十四卦編碼
 
-六十四卦编码，js实现。
+六十四卦編碼，js實現
+
 如：“hello，世界”会编码为“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”。
 
 ## all language
@@ -11,18 +12,22 @@
 * [php-gua64](https://github.com/lizongying/php-gua64)
 * [python](https://github.com/lizongying/pygua64)
 
-## install
+## 引用
+
+### node
 
 ```
 npm i js-gua64
 ```
 
-## example
+## 使用方法
 
-需要在package.json文件中设置"type": "module"
+[samples](https://github.com/lizongying/js-gua64/samples)
+
+需要在package.json文件中設置"type": "module"
 
 ```
-import {decode, encode} from 'js-gua64';
+import {decode, encode, verify} from 'js-gua64';
 
 
 let r = decode('䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇');

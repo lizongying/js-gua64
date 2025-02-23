@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>六十四卦編碼</title>
+    <script type="module">
+        import {decode, encode} from '../gua64.min.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const after = document.querySelector('#after');
+            const before = document.querySelector('#before');
+            const header = document.querySelector('header');
+
+            before.addEventListener('input', () => {
+                after.value = encode(before.value);
+            });
+
+            after.addEventListener('input', () => {
+                before.value = decode(after.value);
+            });
+
+            let hide = false;
+            document.querySelector('#floating-action-button').onclick = () => {
+                if (!hide) {
+                    before.style.display = 'none';
+                    header.style.display = 'none';
+                } else {
+                    before.style.display = 'block';
+                    header.style.display = 'grid';
+                }
+                hide = !hide
+            }
+        })
+    </script>
+    <style>
+        body {
+            direction: rtl;
+            display: flex;
+            align-items: normal;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Source Han Serif TC', 'SimSun-ExtB', 'MingLiU', serif;
+            background-color: #f7f6f5;
+        }
+
+        header {
+            display: grid;
+            align-items: flex-end;
+        }
+
+        h1 {
+            margin: 1em;
+            writing-mode: vertical-rl;
+        }
+
+        .links {
+            direction: ltr;
+            font-size: 16px;
+            text-align: right;
+            list-style-type: none;
+            padding: 1em;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #before:focus, #after:focus {
+            outline: none;
+        }
+
+        #before, #after {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: .5em;
+            box-sizing: border-box;
+            font-size: 24px;
+            color: #444;
+            direction: ltr;
+        }
+
+        #before {
+            border-left: none;
+        }
+
+        #after {
+        }
+
+        .floating-action-button {
+            position: fixed;
+            left: 1em;
+            bottom: 1.5em;
+            width: 56px;
+            height: 56px;
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .floating-action-button:hover {
+            background-color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>六十四卦編碼</h1>
+    <ul class="links">
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">Pages</a></li>
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">Py</a></li>
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">Rust</a></li>
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">Go</a></li>
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">Js</a></li>
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">Kotlin</a></li>
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">Php</a></li>
+        <li><a target="_blank" href="https://github.com/lizongying/js-gua64">C#</a></li>
+    </ul>
+</header>
+
+<div class="container">
+    <label for="before"></label>
+    <textarea id="before" placeholder="編碼前"></textarea>
+    <label for="after"></label>
+    <textarea id="after" placeholder="編碼後"></textarea>
+</div>
+<div id="floating-action-button" class="floating-action-button">
+    卜
+</div>
+</body>
+</html>
