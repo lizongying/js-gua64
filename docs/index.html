@@ -2,6 +2,7 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>六十四卦編碼</title>
     <script type="module">
         import {decode, encode} from './gua64.min.js';
@@ -49,8 +50,9 @@
         }
 
         h1 {
-            margin: 1em;
+            margin: .5em;
             writing-mode: vertical-rl;
+            white-space: nowrap;
         }
 
         .links {
@@ -80,6 +82,7 @@
             font-size: 24px;
             color: #444;
             direction: ltr;
+            font-family: 'Source Han Serif TC', 'SimSun-ExtB', 'MingLiU', serif;
         }
 
         #before {
@@ -109,7 +112,7 @@
             transition: background-color 0.3s ease;
         }
 
-        .floating-action-button:hover {
+        .floating-action-button:active {
             background-color: #e91e63;
         }
     </style>
