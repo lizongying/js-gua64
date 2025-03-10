@@ -4,17 +4,23 @@
 
 如：“hello，世界”會編碼為“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”
 
+[js-gua64](https://github.com/lizongying/js-gua64)
+
 [npm](https://www.npmjs.com/package/js-gua64)
+
+[demo](https://lizongying.github.io/js-gua64/)
 
 ![](screenshots/img.png)
 
 ## 各語言實現
 
+* [rust](https://github.com/lizongying/rs-gua64)
 * [golang](https://github.com/lizongying/go-gua64)
 * [js](https://github.com/lizongying/js-gua64)
 * [java](https://github.com/lizongying/java-gua64)
-* [php-gua64](https://github.com/lizongying/php-gua64)
+* [php](https://github.com/lizongying/php-gua64)
 * [python](https://github.com/lizongying/pygua64)
+* [c#](https://github.com/lizongying/dotnet-gua64)
 
 ## 引用
 
@@ -50,3 +56,7 @@ console.log(r);
 r = verify('䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇');
 console.log(r);
 ```
+
+## 讚賞
+
+![image](./screenshots/appreciate.png)

@@ -52,12 +52,12 @@ const decode = (str) => {
     console.log(b);
     const encoded = [];
     for (let i = 0; i < b.length; i = i + 4) {
-        encoded.push((b[i] & 0x3f) << 2 | (b[i + 1] >> 4 & 0x3));
+        encoded.push((b[i] << 2) | (b[i + 1] >> 4));
         if (b[i + 2] !== 255) {
-            encoded.push((b[i + 1] & 0xf) << 4 | (b[i + 2] >> 2 & 0xf));
+            encoded.push((b[i + 1] << 4) | (b[i + 2] >> 2));
         }
         if (b[i + 3] !== 255) {
-            encoded.push((b[i + 2] & 0x3) << 6 | (b[i + 3] & 0x3f));
+            encoded.push((b[i + 2] << 6) | b[i + 3]);
         }
     }
     return new TextDecoder('utf-8').decode(new Uint8Array(encoded));
