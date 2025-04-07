@@ -1,6 +1,6 @@
 {
   "name": "js-gua64",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "六十四卦編碼，js實現 \n如：“hello，世界”會編碼為“䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇”",
   "main": "docs/gua64.min.js",
   "type": "module",
