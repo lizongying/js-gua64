@@ -68,4 +68,12 @@ const verify = (str) => {
     return [...str].every(char => array.includes(char));
 };
 
-export {encode, decode, verify};
+if (typeof exports !== 'undefined') {
+    module.exports = Han;
+    exports.encode = encode;
+    exports.decode = decode;
+    exports.verify = verify;
+} else {
+    export {encode, decode, verify};
+}
+

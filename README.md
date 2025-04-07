@@ -26,23 +26,24 @@
 
 ### node
 
+install
+
 ```
 npm i js-gua64
 ```
 
-### browser
+package.json
 
+```json
+{
+  "type": "module",
+  "dependencies": {
+    "js-gua64": "^0.1.4"
+  }
+}
 ```
-<script type="module">
-    import {decode, encode, verify} from 'https://raw.githubusercontent.com/lizongying/js-gua64/refs/heads/main/docs/gua64.min.js';
-</script>
-```
 
-## 使用方法
-
-[docs](https://github.com/lizongying/js-gua64/docs)
-
-需要在package.json文件中設置"type": "module"
+example
 
 ```
 import {decode, encode, verify} from 'js-gua64';
@@ -55,6 +56,14 @@ console.log(r);
 
 r = verify('䷯䷬䷿䷶䷸䷬䷀䷌䷌䷎䷼䷲䷰䷳䷸䷘䷔䷭䷒〇');
 console.log(r);
+```
+
+### browser
+
+```
+<script type="module">
+    import {decode, encode, verify} from 'https://lizongying.github.io/js-gua64/gua64.min.js';
+</script>
 ```
 
 ## 讚賞

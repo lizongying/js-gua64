@@ -1,4 +1,4 @@
-import {decode} from './gua64.min.js';
+import {decode} from '../docs/gua64.min.js';
 
 import fs from 'fs';
 
