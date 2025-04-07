@@ -38,7 +38,7 @@ package.json
 {
   "type": "module",
   "dependencies": {
-    "js-gua64": "^0.1.4"
+    "js-gua64": "^0.1.5"
   }
 }
 ```

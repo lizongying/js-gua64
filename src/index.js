@@ -69,7 +69,6 @@ const verify = (str) => {
 };
 
 if (typeof exports !== 'undefined') {
-    module.exports = Han;
     exports.encode = encode;
     exports.decode = decode;
     exports.verify = verify;
